@@ -14,6 +14,7 @@ echo ${OS}
 if [ "$OS" == "OSX" ]
 then
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	brew install thefuck
 	brew install wget node
 
 	brew cask install iterm2
@@ -48,11 +49,16 @@ then
 
 	brew install python
 	# sudo easy_install pip
+
+
+	brew cask install docker
 fi
 
 if [ "$OS" == "LINUX" ]
 then
 	sudo apt update
+	sudo apt install python3-dev python3-pip python3-setuptools
+	sudo pip3 install thefuck
 	sudo apt-get install vim
 	sudo apt-get install tmux
 

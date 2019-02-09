@@ -18,7 +18,7 @@ alias svi="sudo vi"
 alias vis='vim "+set si"'
 alias edit="vim"
 
-alias fuck='sudo !!'
+eval $(thefuck --alias)
 
 extract () {
   if [ -f $1 ] ; then
