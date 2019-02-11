@@ -13,7 +13,6 @@ echo ${OS}
 
 if [ "$OS" == "OSX" ]
 then
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew install thefuck
 	brew install wget node
 
@@ -73,10 +72,20 @@ fi
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
 
 git clone https://github.com/dylanaraps/fff ~/.fff
 cd ~/.fff
-make install
+sudo make install
 
 
 cd ~
