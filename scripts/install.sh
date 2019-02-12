@@ -17,7 +17,7 @@ then
 	brew install wget node
 
 	brew cask install iterm2
-	brew install vim tmux fzf
+	brew install vim tmux fzf tmate
 
 	brew install safe-rm
 	ln -s /usr/local/bin/safe-rm /usr/local/bin/rm
@@ -60,6 +60,10 @@ then
 	sudo pip3 install thefuck
 	sudo apt-get install vim
 	sudo apt-get install tmux
+	sudo apt-get install software-properties-common && \
+	sudo add-apt-repository ppa:tmate.io/archive    && \
+	sudo apt-get update                             && \
+	sudo apt-get install tmate
 
 	sudo apt install software-properties-common apt-transport-https wget
 	wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -

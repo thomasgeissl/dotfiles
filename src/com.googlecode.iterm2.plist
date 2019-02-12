@@ -58,7 +58,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>257 251 796 486 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>495 219 570 452 0 0 1280 777 </string>
+	<string>495 269 570 402 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>173 321 570 452 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -66,9 +66,9 @@
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>299 183 570 452 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>320 160 570 452 0 0 1280 777 </string>
+	<string>320 205 570 402 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>341 137 570 452 0 0 1280 777 </string>
+	<string>341 182 570 402 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
 	<string>362 114 570 452 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
@@ -345,7 +345,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
