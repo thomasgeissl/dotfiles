@@ -51,6 +51,11 @@ then
 
 
 	brew cask install docker
+	brew cask install qt-creator
+	brew install qt
+	brew cask install android-sdk
+	brew cask install android-ndk
+	brew cask install android-studio
 fi
 
 if [ "$OS" == "LINUX" ]
