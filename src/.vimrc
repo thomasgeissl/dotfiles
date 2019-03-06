@@ -22,6 +22,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'leshill/vim-json'
 Plug 'w0rp/ale'
+Plug 'zyedidia/vim-snake'
 call plug#end()
 
 
