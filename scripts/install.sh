@@ -25,19 +25,20 @@ then
 	ln -s /usr/local/bin/safe-rm /usr/local/bin/rm
 
 	brew cask install visual-studio-code arduino
+	brew cask install sourcetree
 	brew install platformio
 	brew cask install eagle
 	brew cask install blender
 
 	brew cask install google-chrome firefox cyberduck
-	brew cask install vlc spotify
+	brew cask install vlc soundflower spotify
 
 	brew cask install spectacle
 
 	brew install lame
 	brew install imagemagick
 
-	brew cask install pd-extended processing
+	brew cask install pd-extended processing supercollider
 	brew cask install slack skype
 
 	brew cask install unetbootin
@@ -47,7 +48,8 @@ then
 	brew install ofoscdebugger
 	brew install ofmididebugger
 
-	npm install -g nodemon http-serve mqtt create-react-app
+	npm install -g yarn nodemon http-serve mqtt 
+	npm install -g create-react-app @vue/cli
 
 	brew install python
 	# sudo easy_install pip
