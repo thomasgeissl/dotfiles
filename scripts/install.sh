@@ -13,6 +13,8 @@ echo ${OS}
 
 if [ "$OS" == "OSX" ]
 then
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 	brew install thefuck
 	brew install wget node
 
@@ -30,10 +32,8 @@ then
 	brew cask install google-chrome firefox cyberduck
 	brew cask install vlc spotify
 
-	# spectacle window manager
 	brew cask install spectacle
 
-	# lame audio file converter
 	brew install lame
 	brew install imagemagick
 
@@ -41,8 +41,11 @@ then
 	brew cask install slack skype
 
 	brew cask install unetbootin
+
 	brew tap thomasgeissl/tools
 	brew install ofpackagemanager
+	brew install ofoscdebugger
+	brew install ofmididebugger
 
 	npm install -g nodemon http-serve mqtt create-react-app
 
@@ -51,8 +54,8 @@ then
 
 
 	brew cask install docker
-	brew cask install qt-creator
-	brew install qt
+	#brew cask install qt-creator
+	#brew install qt
 	brew cask install android-sdk
 	brew cask install android-ndk
 	brew cask install android-studio
@@ -84,22 +87,28 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | b
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# clone
+# install powerline fonts
 git clone https://github.com/powerline/fonts.git --depth=1
-# install
 cd fonts
 ./install.sh
-# clean-up a bit
 cd ..
 rm -rf fonts
 
+# install file mananger
 git clone https://github.com/dylanaraps/fff ~/.fff
 cd ~/.fff
-sudo make install
+if [ "$OS" == "OSX" ]
+then
+	make PREFIX=/usr/local install
+fi
+if [ "$OS" == "LINUX" ]
+then
+	sudo make install
+fi
 
 
+# create directory structure
 cd ~
 mkdir libs
 cd libs
