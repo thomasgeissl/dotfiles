@@ -20,6 +20,7 @@ then
 
 	brew cask install iterm2
 	brew install vim tmux fzf tmate
+	brew install autoconf automake
 
 	brew install safe-rm
 	ln -s /usr/local/bin/safe-rm /usr/local/bin/rm
@@ -61,6 +62,8 @@ then
 	brew cask install android-sdk
 	brew cask install android-ndk
 	brew cask install android-studio
+
+	brew cask install java
 fi
 
 if [ "$OS" == "LINUX" ]
@@ -108,7 +111,6 @@ if [ "$OS" == "LINUX" ]
 then
 	sudo make install
 fi
-
 
 # create directory structure
 cd ~
