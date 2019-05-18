@@ -64,6 +64,8 @@ then
 	brew cask install android-studio
 
 	brew cask install java
+
+	brew install zsh-syntax-highlighting
 fi
 
 if [ "$OS" == "LINUX" ]
@@ -92,6 +94,9 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | b
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+
+
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 # install powerline fonts
 git clone https://github.com/powerline/fonts.git --depth=1
