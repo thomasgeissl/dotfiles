@@ -32,14 +32,14 @@ then
 	brew cask install blender
 
 	brew cask install google-chrome firefox cyberduck
-	brew cask install vlc soundflower spotify
 
 	brew cask install spectacle
 
+	brew cask install vlc soundflower spotify
 	brew install lame
 	brew install imagemagick
-
 	brew cask install pd-extended processing supercollider
+
 	brew cask install slack skype
 
 	brew cask install unetbootin
@@ -64,6 +64,8 @@ then
 	brew cask install android-studio
 
 	brew cask install java
+
+	brew cask install unity
 
 	brew install zsh-syntax-highlighting
 fi
