@@ -28,7 +28,8 @@ then
 	brew cask install visual-studio-code arduino
 	brew cask install sourcetree
 	brew install platformio
-	brew cask install eagle
+	brew cask install eagle fritzing
+	# brew cask install fusion360
 	brew cask install blender
 
 	brew cask install google-chrome firefox cyberduck
@@ -38,7 +39,10 @@ then
 	brew cask install vlc soundflower spotify
 	brew install lame
 	brew install imagemagick
+	brew install glslviewer
+
 	brew cask install pd-extended processing supercollider
+	brew cask isntall touchdesigner
 
 	brew cask install slack skype
 
