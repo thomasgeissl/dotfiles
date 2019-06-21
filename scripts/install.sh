@@ -21,6 +21,7 @@ then
 	brew cask install iterm2
 	brew install vim tmux fzf tmate
 	brew install autoconf automake
+	brew install doxygen
 
 	brew install safe-rm
 	ln -s /usr/local/bin/safe-rm /usr/local/bin/rm
