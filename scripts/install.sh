@@ -43,7 +43,7 @@ then
 	brew install glslviewer
 
 	brew cask install pd-extended processing supercollider
-	brew cask isntall touchdesigner
+	brew cask install touchdesigner
 
 	brew cask install slack skype
 
