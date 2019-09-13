@@ -4,6 +4,8 @@
 choco install vscode
 choco install visualstudio2017community 
 
+choco install msys2
+
 choco install git.install 
 choco install nodejs.install 
 
