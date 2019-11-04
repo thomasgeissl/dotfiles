@@ -33,6 +33,9 @@ then
 	# brew cask install fusion360
 	brew cask install blender
 
+	brew cask install adobe-creative-cloud
+	brew cask install sketch
+
 	brew cask install google-chrome firefox cyberduck
 
 	brew cask install spectacle
