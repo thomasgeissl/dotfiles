@@ -30,6 +30,7 @@ then
 	brew cask install sourcetree
 	brew install platformio
 	brew cask install eagle fritzing
+	brew cask install framer-x
 	# brew cask install fusion360
 	brew cask install blender
 
