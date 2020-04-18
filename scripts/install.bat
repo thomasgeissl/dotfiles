@@ -26,7 +26,8 @@ choco install skype
 
 choco install puredata 
 choco install supercollider 
-choco install touchdesigner 
+choco install touchdesigner
+choco install k-litecodecpackfull
 
 choco install vlc
 choco install spotify
