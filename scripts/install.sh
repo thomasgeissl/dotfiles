@@ -19,7 +19,7 @@ then
 	brew install wget node
 
 	brew cask install iterm2
-	brew install vim tmux fzf tmate
+	brew install vim tmux fzf tmate fff
 	brew install autoconf automake
 	brew install doxygen
 
@@ -29,9 +29,11 @@ then
 	brew cask install visual-studio-code arduino
 	brew cask install sourcetree
 	brew install platformio
+	brew cask install unetbootin
+
 	brew cask install eagle fritzing
 	brew cask install framer-x
-	# brew cask install fusion360
+	brew cask install autodesk-fusion360
 	brew cask install blender
 
 	brew cask install adobe-creative-cloud
@@ -41,7 +43,7 @@ then
 
 	brew cask install spectacle
 
-	brew cask install vlc soundflower spotify
+	brew cask install vlc soundflower blackhole spotify
 	brew install lame
 	brew install imagemagick
 	brew install glslviewer
@@ -49,17 +51,19 @@ then
 	brew cask install pd-extended processing supercollider
 	brew cask install touchdesigner
 
-	brew cask install slack skype
-
-	brew cask install unetbootin
+	brew cask install slack skype zoomus
 
 	brew tap thomasgeissl/tools
 	brew install ofpackagemanager
 	brew install ofoscdebugger
 	brew install ofmididebugger
+	brew cask install ofpackagemanagerfrontend
 
-	npm install -g yarn nodemon http-serve mqtt 
-	npm install -g create-react-app @vue/cli
+	brew tap ixds/tools
+	brew cask install ragazzi
+
+	npm install -g yarn nodemon http-serve mqtt
+	npm install -g create-react-app
 
 	brew install python
 	# sudo easy_install pip
@@ -74,9 +78,9 @@ then
 
 	brew cask install java
 
-	brew cask install unity
+	brew cask install unity steam
 
-	brew install zsh-syntax-highlighting
+	# brew install zsh-syntax-highlighting
 fi
 
 if [ "$OS" == "LINUX" ]
@@ -91,6 +95,11 @@ then
 	sudo apt-get update                             && \
 	sudo apt-get install tmate
 
+	# install file mananger
+	git clone https://github.com/dylanaraps/fff ~/.fff
+	cd ~/.fff
+	sudo make install
+
 	sudo apt install software-properties-common apt-transport-https wget
 	wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 	sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
@@ -100,13 +109,12 @@ then
 	~/.fzf/install
 fi
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh | bash
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
-
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 # install powerline fonts
@@ -116,24 +124,13 @@ cd fonts
 cd ..
 rm -rf fonts
 
-# install file mananger
-git clone https://github.com/dylanaraps/fff ~/.fff
-cd ~/.fff
-if [ "$OS" == "OSX" ]
-then
-	make PREFIX=/usr/local install
-fi
-if [ "$OS" == "LINUX" ]
-then
-	sudo make install
-fi
 
 # create directory structure
 cd ~
 mkdir libs
 cd libs
 git clone --recursive https://github.com/openframeworks/openFrameworks.git
-git clone --recursive https://github.com/WeAreROLI/JUCE.git
+git clone --recursive https://github.com/juce-framework/JUCE.git
 
 cd ..
 mkdir projects
