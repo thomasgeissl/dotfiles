@@ -17,6 +17,8 @@ choco install vim -y
 choco install curl -y
 choco install wget -y
 
+choco install 7zip.install -y
+
 choco install putty -y
 
 choco install arduino -y
