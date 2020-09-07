@@ -95,23 +95,30 @@ then
 	sudo apt-get update                             && \
 	sudo apt-get install tmate
 
+	sudo apt install lame
+	sudo apt install libav-tools 
+
+	sudo apt install snapd
+	sudo snap install core
+	sudo snap install firefox
+	sudo snap install spotify
+
 	# install file mananger
 	git clone https://github.com/dylanaraps/fff ~/.fff
 	cd ~/.fff
 	sudo make install
+
+	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+	~/.fzf/install
 
 	sudo apt install software-properties-common apt-transport-https wget
 	wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 	sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 	sudo apt install code
 
-	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-	~/.fzf/install
 fi
 
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh | bash
-
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
