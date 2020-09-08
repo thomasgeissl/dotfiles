@@ -95,6 +95,7 @@ then
 	sudo apt-get update                             && \
 	sudo apt-get install tmate
 
+	sudo apt install vlc
 	sudo apt install lame
 	sudo apt install libav-tools 
 
@@ -102,6 +103,23 @@ then
 	sudo snap install core
 	sudo snap install firefox
 	sudo snap install spotify
+	sudo snap install skype
+	sudo snap install slack
+
+	sudo snap install node
+
+	# https://makandracards.com/makandra/72209-how-to-install-npm-packages-globally-without-sudo-on-linux
+	NPM_PACKAGES="$HOME/.npm-packages"
+	mkdir -p "$NPM_PACKAGES"
+	echo "prefix = $NPM_PACKAGES" >> ~/.npmrc
+    NPM_PACKAGES="$HOME/.npm-packages"
+
+    echo PATH="$NPM_PACKAGES/bin:$PATH" >> ~/.bashrc
+    echo unset MANPATH  >> ~/.bashrc
+    echo MANPATH="$NPM_PACKAGES/share/man:$(manpath)" >> ~/.bashrc
+    echo NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH" >> ~/.bashrc
+
+	npm install -g http-serve nodemon mqtt
 
 	# install file mananger
 	git clone https://github.com/dylanaraps/fff ~/.fff
