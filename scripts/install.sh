@@ -28,7 +28,7 @@ then
 
 	brew cask install visual-studio-code arduino
 	brew cask install sourcetree
-	brew install platformio
+	brew install platformio arduino-cli
 	brew cask install unetbootin
 
 	brew cask install eagle fritzing
