@@ -29,6 +29,7 @@ then
 	brew cask install visual-studio-code arduino
 	brew cask install sourcetree
 	brew install platformio arduino-cli
+	brew tap heroku/brew && brew install heroku
 	brew cask install unetbootin
 
 	brew cask install eagle fritzing
@@ -95,6 +96,7 @@ then
 	sudo apt-get update                             && \
 	sudo apt-get install tmate
 
+	sudo snap install --classic heroku
 	sudo apt install vlc
 	sudo apt install lame
 	sudo apt install libav-tools 
