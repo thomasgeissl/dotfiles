@@ -14,11 +14,12 @@ echo ${OS}
 if [ "$OS" == "OSX" ]
 then
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
+	
+	brew install git-lfs
 	brew install thefuck
 	brew install wget node
 
-	brew cask install iterm2
+	brew install --cask iterm2
 	brew install vim tmux fzf tmate fff
 	brew install autoconf automake
 	brew install doxygen
@@ -26,42 +27,39 @@ then
 	brew install safe-rm
 	ln -s /usr/local/bin/safe-rm /usr/local/bin/rm
 
-	brew cask install visual-studio-code arduino
-	brew cask install sourcetree
+	brew install --cask visual-studio-code arduino
+	brew install --cask sourcetree
 	brew install platformio arduino-cli
 	brew tap heroku/brew && brew install heroku
-	brew cask install unetbootin
+	brew install --cask unetbootin
 
 	brew cask install eagle fritzing
-	brew cask install framer-x
-	brew cask install autodesk-fusion360
-	brew cask install blender
+	brew install --cask autodesk-fusion360
+	brew install --cask blender
 
-	brew cask install adobe-creative-cloud
-	brew cask install sketch
+	brew install --cask adobe-creative-cloud
+	brew install --cask sketch
 
-	brew cask install google-chrome firefox cyberduck
+	brew install --cask firefox google-chrome cyberduck
 
-	brew cask install spectacle
+	brew install --cask spectacle
 
-	brew cask install vlc soundflower blackhole spotify
+	brew install --cask vlc soundflower blackhole spotify
 	brew install lame
 	brew install imagemagick
 	brew install glslviewer
 
-	brew cask install pd-extended processing supercollider
-	brew cask install touchdesigner
-
-	brew cask install slack skype zoomus
+	brew install --cask processing supercollider touchdesigner
+	brew install --cask slack skype zoomus
 
 	brew tap thomasgeissl/tools
 	brew install ofpackagemanager
 	brew install ofoscdebugger
 	brew install ofmididebugger
-	brew cask install ofpackagemanagerfrontend
+	brew install --cask ofpackagemanagerfrontend
 
 	brew tap ixds/tools
-	brew cask install ragazzi
+	brew install --cask ragazzi
 
 	npm install -g yarn nodemon http-serve mqtt
 	npm install -g create-react-app
@@ -70,16 +68,11 @@ then
 	# sudo easy_install pip
 
 
-	brew cask install docker
+	brew install --cask docker
 	#brew cask install qt-creator
 	#brew install qt
-	brew cask install android-sdk
-	brew cask install android-ndk
-	brew cask install android-studio
-
-	brew cask install java
-
-	brew cask install unity steam
+	brew install --cask android-studio android-sdk android-ndk
+	brew install --cask java unity steam
 
 	# brew install zsh-syntax-highlighting
 fi
@@ -87,6 +80,9 @@ fi
 if [ "$OS" == "LINUX" ]
 then
 	sudo apt update
+	url -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+	sudo apt-get install git-lfs
+	
 	sudo apt install python3-dev python3-pip python3-setuptools
 	sudo pip3 install thefuck
 	sudo apt-get install vim
@@ -114,12 +110,12 @@ then
 	NPM_PACKAGES="$HOME/.npm-packages"
 	mkdir -p "$NPM_PACKAGES"
 	echo "prefix = $NPM_PACKAGES" >> ~/.npmrc
-    NPM_PACKAGES="$HOME/.npm-packages"
+    	NPM_PACKAGES="$HOME/.npm-packages"
 
-    echo PATH="$NPM_PACKAGES/bin:$PATH" >> ~/.bashrc
-    echo unset MANPATH  >> ~/.bashrc
-    echo MANPATH="$NPM_PACKAGES/share/man:$(manpath)" >> ~/.bashrc
-    echo NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH" >> ~/.bashrc
+    	echo PATH="$NPM_PACKAGES/bin:$PATH" >> ~/.bashrc
+    	echo unset MANPATH  >> ~/.bashrc
+    	echo MANPATH="$NPM_PACKAGES/share/man:$(manpath)" >> ~/.bashrc
+    	echo NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH" >> ~/.bashrc
 
 	npm install -g http-serve nodemon mqtt
 
