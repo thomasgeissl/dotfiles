@@ -57,8 +57,6 @@ then
 	brew install ofoscdebugger
 	brew install ofmididebugger
 	brew install --cask ofpackagemanagerfrontend
-
-	brew tap ixds/tools
 	brew install --cask ragazzi
 
 	npm install -g yarn nodemon http-serve mqtt
