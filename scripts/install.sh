@@ -27,9 +27,11 @@ then
 	brew install safe-rm
 	ln -s /usr/local/bin/safe-rm /usr/local/bin/rm
 
-	brew install --cask visual-studio-code arduino
+	brew install --cask visual-studio-code 
+	brew install --cask arduino teensy
 	brew install --cask sourcetree
 	brew install platformio arduino-cli
+	
 	brew tap heroku/brew && brew install heroku
 	brew install --cask unetbootin
 
@@ -50,7 +52,7 @@ then
 	brew install glslviewer
 
 	brew install --cask processing supercollider touchdesigner
-	brew install --cask slack skype zoomus
+	brew install --cask slack skype zoomus discord
 
 	brew tap thomasgeissl/tools
 	brew install ofpackagemanager
