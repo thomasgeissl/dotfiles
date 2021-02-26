@@ -13,14 +13,19 @@ echo ${OS}
 
 if [ "$OS" == "OSX" ]
 then
+	softwareupdate --install-rosetta
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	
 	brew install git-lfs
 	brew install thefuck
-	brew install wget node
+
+	brew install wget
+	brew install node
 
 	brew install --cask iterm2
 	brew install vim tmux fzf tmate fff
+	brew install cmake
+	brew install ninja
 	brew install autoconf automake
 	brew install doxygen
 
@@ -30,29 +35,50 @@ then
 	brew install --cask visual-studio-code 
 	brew install --cask arduino teensy
 	brew install --cask sourcetree
-	brew install platformio arduino-cli
+	brew install platformio 
+	brew install arduino-cli
 	
 	brew tap heroku/brew && brew install heroku
 	brew install --cask unetbootin
 
-	brew cask install eagle fritzing
+	brew install --cask eagle fritzing
 	brew install --cask autodesk-fusion360
 	brew install --cask blender
 
-	brew install --cask adobe-creative-cloud
+	brew install --cask google-backup-and-sync
 	brew install --cask sketch
 
-	brew install --cask firefox google-chrome cyberduck
+	brew install --cask google-drive
+
+	brew install --cask google-chrome
+	brew install --cask firefox 
+	# https://addons.mozilla.org/en/firefox/addon/multi-account-containers/
+	# https://addons.mozilla.org/en-US/firefox/addon/facebook-container/
+	# https://addons.mozilla.org/en-US/firefox/addon/lastpass-password-manager/
 
 	brew install --cask spectacle
 
-	brew install --cask vlc soundflower blackhole spotify
+	brew install --cask vlc 
+	brew install --cask spotify
+	# brew install --cask soundflower 
+	# brew install --cask blackhole 
 	brew install lame
+	# brew install --cask ableton-live
+	brew install --cask native-access
+	# valhalla dsp plugins
+	# kramer master tape
+
 	brew install imagemagick
 	brew install glslviewer
 
 	brew install --cask processing supercollider touchdesigner
-	brew install --cask slack skype zoomus discord
+
+	brew install --cask slack 
+	brew install --cask skype
+	brew install --cask zoomus
+	brew install --cask discord
+	brew install --cask telegram
+	brew install --cask signal
 
 	brew tap thomasgeissl/tools
 	brew install ofpackagemanager
@@ -69,7 +95,7 @@ then
 
 
 	brew install --cask docker
-	#brew cask install qt-creator
+	#brew install --cask qt-creator
 	#brew install qt
 	brew install --cask android-studio android-sdk android-ndk
 	brew install --cask java unity steam
@@ -134,8 +160,10 @@ then
 
 fi
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/HEAD/install.sh | bash
 
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
@@ -157,3 +185,4 @@ git clone --recursive https://github.com/juce-framework/JUCE.git
 
 cd ..
 mkdir projects
+mkdir sandbox
