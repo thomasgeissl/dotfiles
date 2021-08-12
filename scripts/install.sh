@@ -93,8 +93,10 @@ then
 	brew install python
 	# sudo easy_install pip
 
-
+	brew install --cask virtualbox
 	brew install --cask docker
+	brew install --cask vagrant
+	
 	#brew install --cask qt-creator
 	#brew install qt
 	brew install --cask android-studio android-sdk android-ndk
@@ -185,4 +187,5 @@ git clone --recursive https://github.com/juce-framework/JUCE.git
 
 cd ..
 mkdir projects
-mkdir sandbox
+mkdir sand
+
