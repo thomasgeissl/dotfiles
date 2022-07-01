@@ -23,7 +23,7 @@ then
 	brew install node
 
 	brew install --cask iterm2
-	brew install vim tmux fzf tmate fff
+	brew install vim tmux fzf tmate fff bat
 	brew install cmake
 	brew install ninja
 	brew install autoconf automake
@@ -33,7 +33,9 @@ then
 	ln -s /usr/local/bin/safe-rm /usr/local/bin/rm
 
 	brew install --cask visual-studio-code 
-	brew install --cask arduino teensy
+
+	brew install --cask arduino 
+	brew install --cask teensy
 	brew install --cask sourcetree
 	brew install platformio 
 	brew install arduino-cli
@@ -45,11 +47,7 @@ then
 	brew install --cask autodesk-fusion360
 	brew install --cask blender
 
-	brew install --cask google-backup-and-sync
-	brew install --cask sketch
-
 	brew install --cask google-drive
-
 	brew install --cask google-chrome
 	brew install --cask firefox 
 	# https://addons.mozilla.org/en/firefox/addon/multi-account-containers/
@@ -60,10 +58,9 @@ then
 
 	brew install --cask vlc 
 	brew install --cask spotify
-	# brew install --cask soundflower 
-	# brew install --cask blackhole 
+	brew install --cask blackhole-16ch
 	brew install lame
-	# brew install --cask ableton-live
+	brew install --cask ableton-live-suite
 	brew install --cask native-access
 	# valhalla dsp plugins
 	# kramer master tape
@@ -84,17 +81,15 @@ then
 	brew install ofpackagemanager
 	brew install ofoscdebugger
 	brew install ofmididebugger
-	brew install --cask ofpackagemanagerfrontend
 	brew install --cask ragazzi
 
 	npm install -g yarn nodemon http-serve mqtt
-	npm install -g create-react-app
 
 	brew install python
 	# sudo easy_install pip
 
 
-	brew install --cask docker
+	# brew install --cask docker
 	#brew install --cask qt-creator
 	#brew install qt
 	brew install --cask android-studio android-sdk android-ndk
@@ -137,7 +132,6 @@ then
 	mkdir -p "$NPM_PACKAGES"
 	echo "prefix = $NPM_PACKAGES" >> ~/.npmrc
     	NPM_PACKAGES="$HOME/.npm-packages"
-
     	echo PATH="$NPM_PACKAGES/bin:$PATH" >> ~/.bashrc
     	echo unset MANPATH  >> ~/.bashrc
     	echo MANPATH="$NPM_PACKAGES/share/man:$(manpath)" >> ~/.bashrc
