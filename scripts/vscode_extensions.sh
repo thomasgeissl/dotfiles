@@ -9,5 +9,6 @@ code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension TabNine.tabnine-vscode
 code --install-extension 2gua.rainbow-brackets
 code --install-extension oderwat.indent-rainbow
+code --install-extension stuart.unique-window-colors
 code --install-extension eamodio.gitlens
 code --install-extension ChakrounAnas.turbo-console-log
