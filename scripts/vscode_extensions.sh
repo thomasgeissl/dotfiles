@@ -12,3 +12,5 @@ code --install-extension oderwat.indent-rainbow
 code --install-extension stuart.unique-window-colors
 code --install-extension eamodio.gitlens
 code --install-extension ChakrounAnas.turbo-console-log
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension sukumo28.wav-preview
