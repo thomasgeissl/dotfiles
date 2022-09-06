@@ -66,6 +66,9 @@ then
 	# valhalla dsp plugins
 	# kramer master tape
 
+
+	brew install --cask figma
+
 	brew install imagemagick
 	brew install glslviewer
 
