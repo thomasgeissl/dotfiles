@@ -14,6 +14,7 @@ code --install-extension rangav.vscode-thunder-client
 # preview
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension sukumo28.wav-preview
+code --install-extension tomoki1207.pdf
 # web
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-complete-tag

@@ -53,7 +53,8 @@ then
 	brew install --cask firefox 
 	# https://addons.mozilla.org/en/firefox/addon/multi-account-containers/
 	# https://addons.mozilla.org/en-US/firefox/addon/facebook-container/
-	# https://addons.mozilla.org/en-US/firefox/addon/lastpass-password-manager/
+	# https://addons.mozilla.org/de/firefox/addon/react-devtools/
+	# https://addons.mozilla.org/de/firefox/addon/reduxdevtools/
 
 	brew install --cask spectacle
 
@@ -65,6 +66,9 @@ then
 	brew install --cask native-access
 	# valhalla dsp plugins
 	# kramer master tape
+
+
+	brew install --cask figma
 
 	brew install imagemagick
 	brew install glslviewer
