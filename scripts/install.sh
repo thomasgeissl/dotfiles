@@ -18,11 +18,12 @@ then
 	
 	brew install git-lfs
 	brew install thefuck
+	brew install exa
 
 	brew install wget
 	brew install node
 
-	brew install --cask iterm2
+	brew install --cask iterm2 warp
 	brew install vim tmux fzf tmate fff bat
 	brew install cmake
 	brew install ninja
