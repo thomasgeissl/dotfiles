@@ -22,3 +22,7 @@ code --install-extension formulahendry.auto-rename-tag
 # cpp
 code --install-extension ms-vscode.cmake-tools
 code --install-extension ms-vscode.cpptools
+
+# python
+code --install-extension microsoft.pylint
+code --install-extension microsoft.autopep8
