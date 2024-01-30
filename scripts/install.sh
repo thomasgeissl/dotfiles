@@ -25,6 +25,7 @@ then
 
 	brew install --cask iterm2 warp
 	brew install vim tmux fzf tmate fff bat
+ 	brew install rustscan
 	brew install cmake
 	brew install ninja
 	brew install autoconf automake
@@ -44,7 +45,7 @@ then
 	brew tap heroku/brew && brew install heroku
 	brew install --cask unetbootin
 
-	brew install --cask eagle fritzing
+	# brew install --cask eagle fritzing
 	brew install --cask autodesk-fusion360
 	brew install --cask blender
 
@@ -76,8 +77,8 @@ then
 	brew install --cask processing supercollider touchdesigner
 
 	brew install --cask slack 
-	brew install --cask skype
-	brew install --cask zoomus
+	# brew install --cask skype
+	# brew install --cask zoomus
 	brew install --cask discord
 	brew install --cask telegram
 	brew install --cask signal
