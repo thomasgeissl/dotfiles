@@ -11,6 +11,7 @@ code --install-extension TabNine.tabnine-vscode
 code --install-extension eamodio.gitlens
 code --install-extension ChakrounAnas.turbo-console-log
 code --install-extension rangav.vscode-thunder-client
+code --install-extension ms-toolsai.jupyter
 # preview
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension sukumo28.wav-preview
