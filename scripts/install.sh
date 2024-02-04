@@ -73,7 +73,7 @@ then
 
 	brew install imagemagick
 	brew install glslviewer
-
+	brew install --cask protokol
 	brew install --cask processing supercollider touchdesigner
 
 	brew install --cask slack 
