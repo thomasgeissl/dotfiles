@@ -7,6 +7,7 @@ code --install-extension stuart.unique-window-colors
 code --install-extension vscodevim.vim
 code --install-extension esbenp.prettier-vscode
 code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension github.copilot
 code --install-extension TabNine.tabnine-vscode
 code --install-extension eamodio.gitlens
 code --install-extension ChakrounAnas.turbo-console-log
