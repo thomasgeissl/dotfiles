@@ -68,6 +68,8 @@ then
 	brew install --cask native-access
 	# valhalla dsp plugins
 	# kramer master tape
+ 	# decent sampler
+  	# deelay
 
 
 	brew install --cask figma
