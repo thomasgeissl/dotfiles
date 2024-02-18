@@ -15,13 +15,15 @@ if [ "$OS" == "OSX" ]
 then
 	softwareupdate --install-rosetta
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-	
+
+ 	brew install wget
+	brew install node
+ 	brew install --cask visual-studio-code
+
 	brew install git-lfs
 	brew install thefuck
 	brew install exa
 
-	brew install wget
-	brew install node
 
 	brew install --cask iterm2 warp
 	brew install vim tmux fzf tmate fff bat
@@ -31,15 +33,16 @@ then
 	brew install autoconf automake
 	brew install doxygen
 
+ 	brew install --cask basictex
+
 	brew install safe-rm
 	ln -s /usr/local/bin/safe-rm /usr/local/bin/rm
 
-	brew install --cask visual-studio-code
  	brew install --cask teamviewer
 
 	brew install --cask arduino 
 	brew install --cask teensy
-	brew install --cask sourcetree
+	# brew install --cask sourcetree
 	brew install platformio 
 	brew install arduino-cli
 	
