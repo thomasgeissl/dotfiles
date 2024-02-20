@@ -33,6 +33,9 @@ then
 	brew install autoconf automake
 	brew install doxygen
 
+ 	brew install rustup
+
+
  	brew install --cask basictex
 
 	brew install safe-rm
@@ -82,7 +85,7 @@ then
 	brew install --cask protokol
 	brew install --cask processing supercollider touchdesigner
 
-	brew install --cask slack 
+	# brew install --cask slack 
 	# brew install --cask skype
 	# brew install --cask zoomus
 	brew install --cask discord
@@ -101,9 +104,9 @@ then
 	# sudo easy_install pip
 
 
-	brew install --cask virtualbox
+	# brew install --cask virtualbox
 	brew install --cask docker
-	brew install --cask vagrant
+	# brew install --cask vagrant
 	
 	#brew install --cask qt-creator
 	#brew install qt
