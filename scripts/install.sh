@@ -58,7 +58,8 @@ then
 
 	brew install --cask google-drive
 	brew install --cask google-chrome
-	brew install --cask firefox 
+	brew install --cask firefox
+ 	brew install --cask brave-browser
 	# https://addons.mozilla.org/en/firefox/addon/multi-account-containers/
 	# https://addons.mozilla.org/en-US/firefox/addon/facebook-container/
 	# https://addons.mozilla.org/de/firefox/addon/react-devtools/
