@@ -92,6 +92,7 @@ then
 	brew install --cask discord
 	brew install --cask telegram
 	brew install --cask signal
+ 	brew install --cask element
 
 	brew tap thomasgeissl/tools
 	brew install ofpackagemanager
