@@ -55,6 +55,7 @@ then
 	# brew install --cask eagle fritzing
 	brew install --cask autodesk-fusion360
 	brew install --cask blender
+ 	brew install --cask freecad
 
 	brew install --cask google-drive
 	brew install --cask google-chrome
