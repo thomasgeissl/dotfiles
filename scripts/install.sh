@@ -43,7 +43,7 @@ then
 
  	brew install --cask teamviewer
 
-	brew install --cask arduino 
+	brew install --cask arduino-ide
 	brew install --cask teensy
 	# brew install --cask sourcetree
 	brew install platformio 
