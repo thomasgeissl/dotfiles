@@ -74,6 +74,7 @@ then
 	brew install lame
 	brew install --cask ableton-live-suite
 	brew install --cask native-access
+ 	brew install --cask plugdata
 	# valhalla dsp plugins
 	# kramer master tape
  	# decent sampler
