@@ -41,6 +41,7 @@ then
 	brew install safe-rm
 	ln -s /usr/local/bin/safe-rm /usr/local/bin/rm
 
+	brew install --cask ticktick
  	brew install --cask teamviewer
 
 	brew install --cask arduino-ide
