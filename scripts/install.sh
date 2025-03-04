@@ -57,6 +57,7 @@ then
 	brew install --cask autodesk-fusion360
 	brew install --cask blender
  	brew install --cask freecad
+  	brew install --cask bambu-studio
 
 	brew install --cask google-drive
 	brew install --cask google-chrome
