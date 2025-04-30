@@ -74,6 +74,7 @@ then
 	brew install --cask spotify
 	brew install --cask blackhole-16ch
 	brew install lame
+ 	brew install --cask reaper
 	brew install --cask ableton-live-suite
 	brew install --cask native-access
  	brew install --cask plugdata
