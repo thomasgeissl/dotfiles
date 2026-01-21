@@ -13,7 +13,6 @@ echo ${OS}
 
 if [ "$OS" == "OSX" ]
 then
-	softwareupdate --install-rosetta
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
  	brew install wget
@@ -41,6 +40,7 @@ then
 	brew install safe-rm
 	ln -s /usr/local/bin/safe-rm /usr/local/bin/rm
 
+	brew install --cask 1password
 	brew install --cask ticktick
  	brew install --cask teamviewer
 
@@ -50,9 +50,6 @@ then
 	brew install platformio 
 	brew install arduino-cli
 	
-	brew tap heroku/brew && brew install heroku
-	brew install --cask unetbootin
-
 	# brew install --cask eagle fritzing
 	brew install --cask autodesk-fusion360
 	brew install --cask blender
@@ -70,11 +67,14 @@ then
 
 	brew install --cask spectacle
 
-	brew install --cask vlc 
-	brew install --cask spotify
-	brew install --cask blackhole-16ch
 	brew install lame
+	brew install imagemagick
+	brew install ffmpeg
+
+	brew install --cask vlc 
+	brew install --cask blackhole-64ch
  	brew install --cask reaper
+	brew install --cask bitwig-studio
   	brew install --cask iem-plugin-suite
 	brew install --cask ableton-live-suite
 	brew install --cask native-access
@@ -84,13 +84,13 @@ then
  	# decent sampler
   	# deelay
 
+	brew install --cask spotify
+
 
 	brew install --cask figma
 
-	brew install imagemagick
 	brew install glslviewer
 	brew install --cask protokol
-	brew install --cask processing supercollider touchdesigner
 
 	# brew install --cask slack 
 	# brew install --cask skype
@@ -106,14 +106,14 @@ then
 	brew install ofmididebugger
 	brew install --cask ragazzi
 
-	npm install -g yarn nodemon http-serve mqtt
+	npm install -g nodemon http-serve mqtt
 
 	brew install python
 	# sudo easy_install pip
 
 
-	# brew install --cask virtualbox
 	brew install --cask docker
+	# brew install --cask virtualbox
 	# brew install --cask vagrant
 	
 	#brew install --cask qt-creator
@@ -198,12 +198,6 @@ rm -rf fonts
 
 # create directory structure
 cd ~
-mkdir libs
-cd libs
-git clone --recursive https://github.com/openframeworks/openFrameworks.git
-git clone --recursive https://github.com/juce-framework/JUCE.git
-
-cd ..
 mkdir projects
-mkdir sand
+mkdir sandbox
 
